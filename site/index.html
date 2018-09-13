@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contatos </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/paginacao.css">
+	<link rel="stylesheet" type="text/css" href="./css/tabela.css">
+	<link rel="icon" href="./img/logo.jpg" />
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/Contato.class.js"></script>
+	<script type="text/javascript" src="./js/Contatos.class.js"></script>
+	<script type="text/javascript" src="./js/jCadastro.js"></script>
+	
+</head>
+<body>
+	<div id="container">
+		<div id="barra-superior">
+			<div id="logo">
+				<img src="./img/logo.jpg" alt="Contatos" width="25px" height="25px"/>
+
+			</div>
+			<form id="novo-contato">
+				<div id="div-barra">
+					<label for="inome">Nome:</label><input type="text" id="inome" name="nnome" required="required" placeholder="30 caracteres" size="30" maxlength="30">
+					<label for="iemail">Email:</label><input type="email" id="iemail" name="nemail" required="required" placeholder="contato@dominio.com" size="30" maxlength="30">
+					Quais cores gosta?
+					<input type="checkbox" id="iazul" name="cores" value="azul"><label for="iazul">Azul</label>
+					<input type="checkbox" id="ivermelho" name="cores" value="vermelho"><label for="ivermelho">Vermelho</label>
+					<input type="button" id="adicionar" value="Adicionar">
+					<input type="button" id="salvar" value="Salvar">
+				</div>
+			</form>
+		</div>
+		<div id="container-3-colunas">
+		<table id="contatos">
+		<thead>
+		<tr>
+		<th width="auto"></th>
+		<th width="40%">Nome</th>
+		<th width="30%">Email</th>
+		<th width="30%">Cores</th>
+		</tr>
+		</thead>
+		<tbody id="contatos-tabela">
+		</tbody>
+		</table>
+		<div class="center">
+			<div class="pagination">
+			  <a href="#">&laquo;</a>
+			  <a href="#">1</a>
+			  <a href="#" class="active">2</a>
+			  <a href="#">3</a>
+			  <a href="#">4</a>
+			  <a href="#">5</a>
+			  <a href="#">6</a>
+			  <a href="#">&raquo;</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

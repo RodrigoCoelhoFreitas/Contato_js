@@ -1,0 +1,34 @@
+#contatos {
+    border-collapse: collapse;
+    width: 100%;
+	margin:auto;
+}
+
+#contatos td, #contatos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	text-align: left;
+}
+
+#contatos tr:nth-child(even){background-color: #f2f2f2;}
+#contatos tr{background-color: white;}
+
+#contatos tr:hover {background-color: #ddd;}
+
+#contatos th {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+.botao-delete{
+	background-color: #e51d2b;
+    border: none;
+    color: white;
+	padding:5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
